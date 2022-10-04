@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/blue_gray"
+tools:context=".Credits">
+
+    <ImageView
+        android:id="@+id/whiteBox"
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@drawable/rounded"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        tools:srcCompat="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="start|top"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:justificationMode="inter_word"
+            android:maxWidth="150dp"
+            android:text=" "
+            android:textAlignment="textStart"
+            android:textColor="@color/cool_gray"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/rounded"
+        app:srcCompat="@drawable/app_logo" />
+
+    <ImageView
+        android:id="@+id/ita"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:scaleType="fitXY"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        app:srcCompat="@drawable/ita" />
+
+    <ImageView
+        android:id="@+id/eng"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="50dp"
+        android:elevation="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        app:srcCompat="@drawable/eng" />
+
+    <!--android:background="@drawable/rounded" -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_gray"
+    tools:context=".Rules">
+
+    <TextView
+        android:id="@+id/creditsText"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:text=" This is the\n alpha version.\n Please contact\n raffaele.spinoni@gmail.com\n for suggestions and improvements"
+        android:textAlignment="center"
+        android:textColor="@color/cool_gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
